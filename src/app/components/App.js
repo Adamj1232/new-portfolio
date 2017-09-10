@@ -103,7 +103,7 @@ class App extends Component {
             onClick={ () => this.scrollToAbout() }>
           </button>
         </section>
-        <img src={require('../styles/images/new-background-trees.png')} />
+        <img src={require('../styles/images/new-background-trees.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
         <About toggleModal={ this.toggleModal } />
         <Projects toggleModal={ this.toggleModal } />
         <Footer scrollToTop={ this.scrollToTop } />
