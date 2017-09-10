@@ -1,9 +1,8 @@
 body {
-  background: url('./images/lake-canoe1.jpg') no-repeat center center fixed;
-  background-size: cover;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #000000 5%, #010A10 30%, #59230B 75%, #2F1107 100%);
 }
 
 h1 {
@@ -27,18 +26,26 @@ h4 {
   margin-bottom: 0;
 }
 
+canvas {
+  position: absolute;
+}
+
 #title {
+  pointer-events: none;
   margin-right: 95px;
   font-size: 1.64em;
 }
 
 #header {
+  pointer-events: none;
+  position: relative;
   height: 100vh;
   width: 490px;
-  margin: 40vh 10vw 220px auto;
+  margin: 25vh 10vw 340px auto;
 }
 
 #scroll-btn {
+  pointer-events: visibleFill;
   display: block;
   width: 50px;
   height: 50px;
@@ -49,65 +56,75 @@ h4 {
   background: url('./images/arrow.png');
   background-size: cover;
   outline: none;
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#scroll-btn:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 1));
 }
 
 #name {
+  pointer-events: none;
+  z-index: 1;
   padding: 25px 60px 25px 25px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   border: none;
-  /*-o-text-overflow: clip;
-  text-overflow: clip;
-  transition: text-shadow 3s ease;
-  -webkit-transition: text-shadow 2s linear;
-  -moz-transition: text-shadow 2s linear;
-  -ms-transition: text-shadow 2s linear;
-  -o-transition: text-shadow 2s linear;
-  transition: text-shadow 2s linear;
-  text-shadow: none*/
+  color: #ededed;
+}
+
+#name h1 {
+  color: #0a0a0a;
+  text-shadow:
+    1px 1px #61b4de,
+    2px 2px #91c467,
+    3px 3px #f3a14b,
+    4px 4px #e84c50,
+    5px 5px #4e5965;
+  transition: 0.5s all linear;
+  text-transform: uppercase;
+  -webkit-animation-name: name; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  animation-name: name;
+  animation-duration: 10s;
+}
+
+
+/* Standard syntax */
+@keyframes name {
+    0%   {
+      color: #ededed;
+      text-shadow:
+        1px 1px #61b4de, 2px 2px #61b4de,
+        3px 3px #91c467, 4px 4px #91c467,
+        5px 5px #f3a14b, 6px 6px #f3a14b,
+        7px 7px #e84c50, 8px 8px #e84c50,
+        9px 9px #4e5965, 10px 10px #4e5965;
+    }
+    100% {
+      color: #0a0a0a;
+      text-shadow:
+        1px 1px #61b4de,
+        2px 2px #91c467,
+        3px 3px #f3a14b,
+        4px 4px #e84c50,
+        5px 5px #4e5965;
+    }
 }
 
 #period {
+  text-shadow: none;
+  margin: 0 -1px 0 5px;
   -webkit-animation: color-change 2s infinite;
   -moz-animation: color-change 2s infinite;
   -o-animation: color-change 2s infinite;
   -ms-animation: color-change 2s infinite;
   animation: color-change 2s infinite;
 }
-
-#name:hover {
-  /*transition: text-shadow 3s ease;
-  -webkit-transition: text-shadow 2s linear;
-  -moz-transition: text-shadow 2s linear;
-  -ms-transition: text-shadow 2s linear;
-  -o-transition: text-shadow 2s linear;
-  transition: text-shadow 2s linear;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: 0 1px 0 rgb(128,141,147) , -1px 0 0 rgb(205,210,213) , -1px 2px 0 rgb(128,141,147) , -2px 1px 0 rgb(205,210,213) , -2px 3px 0 rgb(128,141,147) , -3px 2px 0 rgb(205,210,213) , -3px 4px 0 rgb(128,141,147) , -4px 3px 0 rgb(205,210,213);*/
-}
-
-/*canvas{
-  display:block;
-  vertical-align:bottom;
-}*/
-
-/* ---- particles.js container ---- */
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-
-
-
 
 @-webkit-keyframes color-change {
   0% { color: #870611; }
@@ -139,6 +156,18 @@ h4 {
   100% { color: #870611; }
 }
 
+@keyframes rubberBand {
+  0% {transform: scale(1);}
+  30% {transform: scaleX(1.25) scaleY(0.75);}
+  40% {transform: scaleX(0.75) scaleY(1.25);}
+  60% {transform: scaleX(1.15) scaleY(0.85);}
+  100% {transform: scale(1);}
+}
+.rubberBand {
+  animation-name: rubberBand;
+  animation: rubberBand 5s;
+}
+
 .App {
   color: #18261d;
   text-align: right;
@@ -148,6 +177,13 @@ h4 {
   width: 100%;
   height: 1000px;
   margin: 0 200px auto auto;
+}
+
+.App img {
+  pointer-events: none;
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
 }
 
 .link-container {

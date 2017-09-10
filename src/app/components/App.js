@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Route, Switch } from 'react-router-dom';
 import Scroll from 'react-scroll';
 import Modal from 'react-modal'
+import ParticleNodes from './interactiveNodes/particles.js';
 
 import '../styles/index.css';
 import ProjectsData from './Projects/Projects-Data.js'
@@ -23,6 +24,7 @@ class App extends Component {
     this.toggleModal = this.toggleModal.bind(this);
     this.scrollToTop = this.scrollToTop.bind(this);
   }
+
 
   scrollToAbout() {
     Scroll.scroller.scrollTo('about', {
@@ -86,11 +88,14 @@ class App extends Component {
     return (
       <div className="App"
            onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
+
+        <ParticleNodes/>
+
         { this.projectDetails() }
         <section id='header'>
           <section id='name'>
             <h1> adam<span id='period'>.</span>carpenter </h1>
-            <h2 id='title'>Software Developer</h2>
+            <h2 id='title' className='rubberBand'>Software Developer</h2>
           </section>
           <button
             id='scroll-btn'
@@ -98,6 +103,7 @@ class App extends Component {
             onClick={ () => this.scrollToAbout() }>
           </button>
         </section>
+        <img src={require('../styles/images/new-background-trees.png')} />
         <About toggleModal={ this.toggleModal } />
         <Projects toggleModal={ this.toggleModal } />
         <Footer scrollToTop={ this.scrollToTop } />

@@ -6,11 +6,15 @@ const ParticleNodes = () => {
     <Particles
     style={{
       position: 'absolute',
+      top: '0',
+      bottom: '0',
+      left: '0',
+      right: '0'
     }}
     params={{
         "particles": {
           "number": {
-            "value": 70,
+            "value": 90,
             "density": {
               "enable": true,
               "value_area": 800
@@ -45,12 +49,12 @@ const ParticleNodes = () => {
             }
           },
           "size": {
-            "value": 3,
+            "value": 2,
             "random": true,
             "anim": {
               "enable": false,
               "speed": 90.57680220235335,
-              "size_min": 4.060386061506725,
+              "size_min": 3.060386061506725,
               "sync": false
             }
           },
@@ -58,7 +62,7 @@ const ParticleNodes = () => {
             "enable": true,
             "distance": 40.2388442605866,
             "color": "#ffffff",
-            "opacity": 0.3,
+            "opacity": 0.5,
             "width": 1
           },
           "move": {
@@ -108,7 +112,7 @@ const ParticleNodes = () => {
               "duration": 0.4
             },
             "push": {
-              "particles_nb": 25
+              "particles_nb": 10
             },
             "remove": {
               "particles_nb": 0
