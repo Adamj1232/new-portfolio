@@ -30,10 +30,123 @@ canvas {
   position: absolute;
 }
 
-#title {
+.employment-field {
   pointer-events: none;
-  margin-right: 95px;
+  margin: 10px 95px 0 50px;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 1.64em;
+  animation-duration: 5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+.employment-field span {
+  display: inline-block;
+  opacity: 0;
+  transform: translate(-150px, 0) scale(.3);
+  animation: leftRight 4s forwards;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+		opacity: 1;
+		color: #2c6934;
+	}
+	60% {
+		color: #161975;
+	}
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: .3;
+	}
+}
+
+@-webkit-keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+		opacity: 1;
+		color: #2c6934;
+	}
+	60% {
+		color: #161975;
+	}
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: .3;
+	}
+}
+
+.employment-field span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.employment-field span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.employment-field span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.employment-field span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.employment-field span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.employment-field span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.employment-field span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.employment-field span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.employment-field span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.employment-field span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.employment-field span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.employment-field span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.employment-field span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.1, .1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.1, .1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
 }
 
 #header {
@@ -41,29 +154,57 @@ canvas {
   position: relative;
   height: 100vh;
   width: 490px;
-  margin: 25vh 14vw 340px auto;
+  margin: 28vh 59vw 340px auto;
 }
 
 #scroll-btn {
   pointer-events: visibleFill;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 20px 260px 0 auto;
   border: none;
   cursor: pointer;
   background-color: transparent;
-  background: url('./images/arrow.png');
+  opacity: .3;
+  background: url('./images/arrow-white.png');
   background-size: cover;
   outline: none;
   -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
   -webkit-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  animation: fadeAndScaleBtn 14s forwards;
+}
+
+@keyframes fadeAndScaleBtn {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    to {
+        opacity: .3;
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes fadeAndScaleBtn {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    to {
+        opacity: .3;
+        transform: scale(1, 1);
+    }
 }
 
 #scroll-btn:hover {
-	-webkit-filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 1));
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  opacity: .9;
+  filter: drop-shadow(0px 0px 8px #ffffff);
+	-webkit-filter: drop-shadow(0px 0px 8px #ffffff);
 }
 
 #name {
@@ -84,15 +225,36 @@ canvas {
                3px 3px #804b33,
                4px 4px #793718,
                5px 5px #4e654f;
-  transition: 0.5s all linear;
+  transition: 3s all linear;
   text-transform: uppercase;
   -webkit-animation-name: name; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 18s; /* Safari 4.0 - 8.0 */
   animation-name: name;
-  animation-duration: 12s;
+  animation-duration: 18s;
 }
 
 @keyframes name {
+  0%   {
+    color: #ededed;
+    text-shadow:
+      1px 1px #161975, 2px 2px #161975,
+      3px 3px #2c6934, 4px 4px #2c6934,
+      5px 5px #804b33, 6px 6px #804b33,
+      7px 7px #793718, 8px 8px #793718,
+      9px 9px #4e654f, 10px 10px #4e654f;
+  }
+  100% {
+    color: #121312;
+    text-shadow:
+      1px 1px #161975,
+      2px 2px #2c6934,
+      3px 3px #804b33,
+      4px 4px #793718,
+      5px 5px #4e654f;
+  }
+}
+
+@-webkit-keyframes name {
   0%   {
     color: #ededed;
     text-shadow:
@@ -125,44 +287,32 @@ canvas {
 
 @-webkit-keyframes color-change {
   0% { color: #59230B; }
-  50% { color: #870611; }
+  50% { color: #8e222b; }
   100% { color: #59230B; }
 }
 
 @-moz-keyframes color-change {
   0% { color: #59230B; }
-  50% { color: #870611; }
+  50% { color: #8e222b; }
   100% { color: #59230B; }
 }
 
 @-ms-keyframes color-change {
   0% { color: #59230B; }
-  50% { color: #870611; }
+  50% { color: #8e222b; }
   100% { color: #59230B; }
 }
 
 @-o-keyframes color-change {
   0% { color: #59230B; }
-  50% { color: #870611; }
+  50% { color: #8e222b; }
   100% { color: #59230B; }
 }
 
 @keyframes color-change {
   0% { color: #59230B; }
-  50% { color: #870611; }
+  50% { color: #8e222b; }
   100% { color: #59230B; }
-}
-
-@keyframes rubberBand {
-  0% {transform: scale(1); color: black;}
-  30% {transform: scaleX(1.25) scaleY(0.75);}
-  40% {transform: scaleX(0.75) scaleY(1.25);}
-  60% {transform: scaleX(1.15) scaleY(0.85);}
-  100% {transform: scale(1); color: white;}
-}
-.rubberBand {
-  animation-name: rubberBand;
-  animation: rubberBand 6s;
 }
 
 .App {
@@ -172,15 +322,16 @@ canvas {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   margin: 0 200px auto auto;
+  position: relative;
 }
 
 .App .landing-trees {
   pointer-events: none;
   width: 100%;
   position: absolute;
-  bottom: -35px;
+  bottom: 0;
 }
 
 .link-container {
@@ -200,6 +351,11 @@ canvas {
   border: 4px solid #fff;
   transition: all .5s;
   transform: scale(.95);
+}
+
+#gradient {
+  height: 100vh;
+  width: 100vw;
 }
 
 @media (max-width: 830px) {

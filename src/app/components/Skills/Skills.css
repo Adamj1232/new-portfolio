@@ -1,5 +1,5 @@
 #about h2 {
-  color: #1e3426;
+  color: #14212b;
   padding: 30px 0;
   text-align: center;
   font-weight: 700;
@@ -10,7 +10,7 @@
 .code-icon, .testing-icon, .workflow-icon, .design-icon {
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #18261d;
+  background-color: #14212b;
   width: 120px;
   height: 124px;
 }
@@ -35,11 +35,12 @@
 .skills-block .inner-skills {
   padding-left: 25px;
   width: 55%;
+  color: #14212b;
 }
 
 .skills-block h4 {
   padding: 5px 0 15px 0;
-  color: #334439;
+  color: #14212b;
   font-size: 1.2em;
 }
 

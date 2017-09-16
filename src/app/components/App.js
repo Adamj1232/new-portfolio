@@ -25,7 +25,6 @@ class App extends Component {
     this.scrollToTop = this.scrollToTop.bind(this);
   }
 
-
   scrollToAbout() {
     Scroll.scroller.scrollTo('about', {
       durcation: 1000,
@@ -90,16 +89,21 @@ class App extends Component {
            onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
 
         <ParticleNodes/>
-
         { this.projectDetails() }
         <section id='header'>
           <section id='name'>
             <h1> adam<span id='period'>.</span>carpenter </h1>
-            <h2 id='title' className='rubberBand'>Software Developer</h2>
+            <h2 id='title' className='employment-field'>
+              <span>S</span><span>o</span><span>f</span><span>t</span>
+              <span>w</span><span>a</span><span>r</span><span>e</span> &nbsp;
+              <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span>
+              <span>p</span><span>e</span><span>r</span>
+            </h2>
           </section>
           <button
             id='scroll-btn'
             type='button'
+            title='Learn More About Adam'
             onClick={ () => this.scrollToAbout() }>
           </button>
         </section>

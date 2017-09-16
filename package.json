@@ -1,7 +1,7 @@
 {
   "name": "Adam_Carpenter-Personal_Portfolio",
   "version": "0.1.0",
-  "description": "Software Developer Portfolio for Adam Carpenter",
+  "description": "Software Developer Portfolio for Adam Carpenter v2",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.0.0",
@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Adamj1232/portfolio-website"
+    "url": "https://github.com/Adamj1232/new-portfolio"
   },
   "author": "Adam Carpenter",
-  "homepage": "https://adamj1232.github.io/portfolio-website/",
+  "homepage": "https://adamj1232.github.io/new-portfolio/",
   "pre-commit": [
     "lint"
   ]

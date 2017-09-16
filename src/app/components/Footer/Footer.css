@@ -24,8 +24,10 @@
   height: 50px;
 }
 
-#scroll-top-btn:focus {
+#scroll-top-btn:hover {
   outline: none;
+  filter: drop-shadow(0px 0px 8px #b15629);
+  -webkit-filter: drop-shadow(0px 0px 8px #b15629);
 }
 
 .footer {

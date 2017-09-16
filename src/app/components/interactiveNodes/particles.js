@@ -14,7 +14,7 @@ const ParticleNodes = () => {
     params={{
         "particles": {
           "number": {
-            "value": 90,
+            "value": 200,
             "density": {
               "enable": true,
               "value_area": 800
@@ -61,7 +61,7 @@ const ParticleNodes = () => {
           "line_linked": {
             "enable": true,
             "distance": 40.2388442605866,
-            "color": "#ffffff",
+            "color": "#53210D",
             "opacity": 0.5,
             "width": 1
           },
