@@ -32,7 +32,7 @@ canvas {
 
 .employment-field {
   pointer-events: none;
-  margin: 10px 95px 0 50px;
+  margin: 10px 90px 0 50px;
   white-space: nowrap;
   overflow: hidden;
   font-size: 1.64em;
@@ -162,7 +162,7 @@ canvas {
   display: block;
   width: 40px;
   height: 40px;
-  margin: 20px 260px 0 auto;
+  margin: 0 267px 20px auto;
   border: none;
   cursor: pointer;
   background-color: transparent;
