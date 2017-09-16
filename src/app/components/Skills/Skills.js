@@ -23,7 +23,7 @@ const Skills = () => {
   return (
     <article className='skills-section-outter'>
       <div className='skills-wrapper'>
-        <h2>Skills</h2>
+        <h2>Skills & Experience</h2>
         <section className='skills-section'>
           { allSkills }
         </section>
