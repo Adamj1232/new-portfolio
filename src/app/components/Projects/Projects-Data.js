@@ -63,31 +63,7 @@ const ProjectsData = [
       git: './Project-Images/github.svg',
       site: './Project-Images/computer.svg',
     },
-  },
-  // {
-  //   title: 'SwapiBox',
-  //   description: 'A Star Wars game card  application where card data elements are pulled in using asynchronous promise calls and rendered using React. Users can also flag and retrieve favorites.',
-  //   image: '././Project-Images/swapi_box.png',
-  //   gitHubRepo: 'https://github.com/Mickyfen17/SWAPIbox',
-  //   siteURL: 'https://mickyfen17.github.io/SWAPIbox/',
-  //   techUsed: ['Javascript ', 'React ', 'HTML5 ', 'SCSS ', 'Jest ', 'Enzyme'],
-  //   icons: {
-  //     git: './Project-Images/github.svg',
-  //     site: './Project-Images/computer.svg',
-  //   },
-  // },
-  // {
-  //   title: '2DoBox',
-  //   description: 'Fully accessible single page application using Local Storage to keep track of To-Do\'s. Similar aplication to ideaBox but refactored using ES6. Application tested using Mocha, Chai and Selenium.',
-  //   image: '/Project-Images/2_do_box.png',
-  //   gitHubRepo: 'https://github.com/Mickyfen17/2DoBox-Pivot',
-  //   siteURL: 'https://mickyfen17.github.io/2DoBox-Pivot/',
-  //   techUsed: ['Javascript ', 'Selenium ', 'HTML5 ', 'SCSS ', 'ARIA', 'Mocha ', 'Chai '],
-  //   icons: {
-  //     git: './Project-Images/github.svg',
-  //     site: './Project-Images/computer.svg',
-  //   },
-  // },
+  }
 ];
 
 export default ProjectsData;
