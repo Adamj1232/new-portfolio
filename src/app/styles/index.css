@@ -149,6 +149,10 @@ canvas {
     }
 }
 
+.header-container {
+    height: 100vh;
+}
+
 #header {
   pointer-events: none;
   position: relative;
