@@ -43,6 +43,7 @@ class App extends Component {
         <Modal
           className='project-modal'
           isOpen={ this.state.modalOpen }
+          onRequestClose={this.toggleModal}
           contentLabel='Resume'
         >
           <Resume
@@ -58,6 +59,7 @@ class App extends Component {
         <Modal
           className='project-modal'
           isOpen={ this.state.modalOpen }
+          onRequestClose={this.toggleModal}
           contentLabel='Project Details'
         >
           <ProjectDetails
