@@ -336,6 +336,7 @@ canvas {
   width: 100%;
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 
 .link-container {
@@ -364,7 +365,7 @@ canvas {
 
 @media (max-width: 830px) {
   #header {
-    margin: 30vh 5vw 260px auto;
+    margin: 35vh 34vw 270px auto;
   }
 }
 
@@ -400,7 +401,7 @@ canvas {
 }
 @media (max-width: 430px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.4em;
   }
 
   #title {
@@ -409,7 +410,7 @@ canvas {
 }
 @media (max-width: 380px) {
   h1 {
-    font-size: 2.7em;
+    font-size: 2.2em;
   }
 
   #title {
@@ -417,7 +418,7 @@ canvas {
   }
 
   #header {
-    margin-top: 5vh;
+    margin-top: 8vh;
     margin-bottom: 84vh;
   }
 
@@ -428,7 +429,7 @@ canvas {
 
   #scroll-btn {
     position: absolute;
-    bottom: 10px;
+    bottom: -50px;
     left: 42%;
   }
 }

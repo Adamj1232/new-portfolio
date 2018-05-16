@@ -89,6 +89,7 @@ class App extends Component {
     return (
       <div className="App"
            onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
+        <img src={require('../styles/images/new-background-trees1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
 
         <ParticleNodes/>
         { this.projectDetails() }
@@ -109,7 +110,6 @@ class App extends Component {
             onClick={ () => this.scrollToAbout() }>
           </button>
         </section>
-        <img src={require('../styles/images/new-background-trees1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
         <About toggleModal={ this.toggleModal } />
         <Projects toggleModal={ this.toggleModal } />
         <Footer scrollToTop={ this.scrollToTop } />
