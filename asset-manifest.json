@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.ef62c8d3.css",
   "main.css.map": "static/css/main.ef62c8d3.css.map",
-  "main.js": "static/js/main.25c36444.js",
-  "main.js.map": "static/js/main.25c36444.js.map",
+  "main.js": "static/js/main.baf3f206.js",
+  "main.js.map": "static/js/main.baf3f206.js.map",
   "static/media/CloudKicker.png": "static/media/CloudKicker.d538ad11.png",
   "static/media/CloudKicker1.png": "static/media/CloudKicker1.399b1822.png",
   "static/media/ConnectFour.png": "static/media/ConnectFour.bc71a0f7.png",
@@ -26,6 +26,7 @@
   "static/media/linkedin-logo.svg": "static/media/linkedin-logo.154629f2.svg",
   "static/media/new-background-trees1.png": "static/media/new-background-trees1.d7f390bf.png",
   "static/media/resume-download.svg": "static/media/resume-download.c2a6cd97.svg",
+  "static/media/resume-edu.pdf": "static/media/resume-edu.ddcba7d1.pdf",
   "static/media/testing.svg": "static/media/testing.8219723d.svg",
   "static/media/twitter.svg": "static/media/twitter.28ca8de7.svg",
   "static/media/workflow.svg": "static/media/workflow.96182fdc.svg"
