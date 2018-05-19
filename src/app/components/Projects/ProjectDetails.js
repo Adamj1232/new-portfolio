@@ -1,5 +1,6 @@
 import React from 'react';
-import './ProjectDetails.css'
+import './ProjectDetails.css';
+import ecoGif from './Project-Images/EcoSymphSample.gif';
 
 const ProjectDetails = ({ title, description, image, techUsed, toggleModal, gifLink }) => {
 
@@ -10,28 +11,52 @@ const ProjectDetails = ({ title, description, image, techUsed, toggleModal, gifL
   let imageUsed = `${gifLink}`
 
   gifLink === '' ? imageUsed = require(`${image}`) : imageUsed = `${gifLink}`
+  if (title === 'Eco-Symphony') {
+    return (
+      <section className='project-details'>
+        <h2 className='project-detail-header'>{ title }</h2>
+        <img
+          className='project-detail-image' src={ecoGif}
+          alt={`Screenshot of my ${title} project`}
+        />
+        <p className='project-detail-desc'>{ description }</p>
+        <div className='project-detail-tech'>
+          <h3>Technologies Used</h3>
+          <ul>
+            { listedTech }
+          </ul>
+        </div>
+        <button
+          className='home-button'
+          onClick={ () => toggleModal() }>
+          X
+        </button>
+      </section>
+    );
+  } else {
+    return (
+      <section className='project-details'>
+        <h2 className='project-detail-header'>{ title }</h2>
+        <img
+          className='project-detail-image' src={imageUsed}
+          alt={`Screenshot of my ${title} project`}
+        />
+        <p className='project-detail-desc'>{ description }</p>
+        <div className='project-detail-tech'>
+          <h3>Technologies Used</h3>
+          <ul>
+            { listedTech }
+          </ul>
+        </div>
+        <button
+          className='home-button'
+          onClick={ () => toggleModal() }>
+          X
+        </button>
+      </section>
+    );
+  }
 
-  return (
-    <section className='project-details'>
-      <h2 className='project-detail-header'>{ title }</h2>
-      <img
-        className='project-detail-image' src={imageUsed}
-        alt={`Screenshot of my ${title} project`}
-      />
-      <p className='project-detail-desc'>{ description }</p>
-      <div className='project-detail-tech'>
-        <h3>Technologies Used</h3>
-        <ul>
-          { listedTech }
-        </ul>
-      </div>
-      <button
-        className='home-button'
-        onClick={ () => toggleModal() }>
-        X
-      </button>
-    </section>
-  );
 };
 
 export default ProjectDetails;

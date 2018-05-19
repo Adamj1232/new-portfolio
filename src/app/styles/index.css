@@ -363,6 +363,10 @@ canvas {
   width: 100vw;
 }
 
+.ReactModal__Overlay--after-open {
+  z-index: 2;
+}
+
 @media (max-width: 830px) {
   #header {
     margin: 35vh 34vw 270px auto;
