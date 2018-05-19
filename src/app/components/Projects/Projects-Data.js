@@ -1,3 +1,4 @@
+// all gif links must be in the format below to work properly but are restrunred from redordit as - http://recordit.co/LAdssCIM1f
 const ProjectsData = [
   {
     title: 'Eco-Symphony',
