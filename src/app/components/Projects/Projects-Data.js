@@ -1,5 +1,18 @@
 const ProjectsData = [
   {
+    title: 'Eco-Symphony',
+    description: 'This project was part of an Innovation Day challenge at Charter that I took on with a small team. We used a RaspberryPi 2, as well as a hygrometer, small water pump and led light to create an automated office plant care system. Unfortunately I was not able to get a picture of the system we demo-ed as we had to disassemble for parts for a different small project.',
+    image: './Project-Images/EcoSymphony.png',
+    gifLink:'./Project-Images/EcoSymphSample.gif',
+    gitHubRepo: 'https://github.com/Adamj1232/eco-symphony',
+    siteURL: '',
+    techUsed: ['Javascript ', 'D3 ', 'PostgresSQL ', 'HTML5 ', 'CSS3 ', 'Raspeberry Pi 2 '],
+    icons: {
+      git: './Project-Images/github.svg',
+      site: './Project-Images/computer.svg',
+    },
+  },
+  {
     title: 'GigWrangler',
     description: 'GigWrangler is a Musician Booking app built with React/Redux and JS ES6, Google Maps API and tested with Enzyme, Mocha & Chai. With a propritary set of data containing over 3200 venues throughout the US, GW uses google maps API to pinpoint and connect musicians and talent agents around the US. Included is venue data on each venue that allows musicians to connect with talent buyers and create a tour throughout the country.',
     image: './Project-Images/GigWrangler1.png',
