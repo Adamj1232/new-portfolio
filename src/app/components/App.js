@@ -89,9 +89,9 @@ class App extends Component {
     return (
       <div className="App"
            onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
+        <ParticleNodes/>
         <img src={require('../styles/images/new-background-trees1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
 
-        <ParticleNodes/>
         { this.projectDetails() }
         <section id='header'>
           <section id='name'>

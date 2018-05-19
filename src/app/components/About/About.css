@@ -4,6 +4,7 @@
   color: #1e3426;
   margin-top: 145px;
   width: 100vw;
+  z-index: 2;
 }
 
 .about-container {
@@ -55,6 +56,11 @@
 }
 
 @media (max-width: 380px) {
+  #header {
+    margin-top: 41vh;
+    margin-bottom: 51vh
+  }
+
   #about {
     margin-top: 0px;
   }

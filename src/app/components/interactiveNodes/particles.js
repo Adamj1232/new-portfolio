@@ -9,8 +9,7 @@ const ParticleNodes = () => {
       top: '0',
       bottom: '0',
       left: '0',
-      right: '0',
-      zIndex: '-2'
+      right: '0'
     }}
     params={{
         "particles": {
@@ -86,7 +85,7 @@ const ParticleNodes = () => {
           "events": {
             "onhover": {
               "enable": true,
-              "mode": "grab"
+              "mode": "bubble, grab"
             },
             "onclick": {
               "enable": true,
@@ -102,11 +101,11 @@ const ParticleNodes = () => {
               }
             },
             "bubble": {
-              "distance": 400,
-              "size": 40,
-              "duration": 2,
-              "opacity": 8,
-              "speed": 3
+              "distance": 100,
+              "size": 1,
+              "duration": 1,
+              "opacity": 5,
+              "speed": 2
             },
             "repulse": {
               "distance": 200,
