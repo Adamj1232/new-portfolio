@@ -39,6 +39,19 @@ const ProjectsData = [
     },
   },
   {
+    title: 'Ghost Revue',
+    description: 'This website was created for a band out of Denver that I perform with. Built using React as well as plugins from ReverbNation and Spotify',
+    image: './Project-Images/GhostRevue.png',
+    gifLink:'http://recordit.co/LAdssCIM1f',
+    gitHubRepo: 'https://github.com/Adamj1232/ghost-revue',
+    siteURL: 'https://adamj1232.github.io/ghost-revue/',
+    techUsed: ['Javascript ', 'React ', 'HTML5 ', 'CSS3 ', 'Spotify Player ', 'ReverbNation Show Widget '],
+    icons: {
+      git: './Project-Images/github.svg',
+      site: './Project-Images/computer.svg',
+    },
+  },
+  {
     title: 'Jet-Fuel',
     description: 'This application is based on the bitly url shortener. Using Express.js to create endpoints and Knex along with PostgresSQL to store link data. The user is able to create specific folders and add long urls from any website to that folder. The Express server and Knex/postgreSQL DB will then create a shortened url that can be used anywhere to redirect a user back to the original long url.',
     image: './Project-Images/JetFuel1.png',
