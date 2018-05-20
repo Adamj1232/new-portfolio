@@ -41,12 +41,12 @@ const ProjectsData = [
   },
   {
     title: 'Ghost Revue',
-    description: 'This website was created for a band out of Denver that I perform with, with the help of the guitar player and fellow Turing Grad. This site was built using React as well as plugins from ReverbNation and Spotify. Logo and landing page image was created using Photoshop and Illustrator',
+    description: 'A fully responsive website created for a band out of Denver that I perform with, with the help of the guitar player and fellow Turing Grad Zane Russell. This site was built using React as well as plugins from ReverbNation and Spotify. Logo and landing page image were created using Photoshop and Illustrator',
     image: './Project-Images/GhostRevue.png',
     gifLink:'http://g.recordit.co/LAdssCIM1f.gif',
     gitHubRepo: 'https://github.com/Adamj1232/ghost-revue',
     siteURL: 'https://adamj1232.github.io/ghost-revue/',
-    techUsed: ['Javascript ', 'React ', 'HTML5 ', 'CSS3 ', 'Spotify Player ', 'ReverbNation Show Widget '],
+    techUsed: ['Javascript ', 'React ', 'HTML5 ', 'CSS3 ', 'Spotify Player Plugin ', 'ReverbNation Concert Calendar Plugin '],
     icons: {
       git: './Project-Images/github.svg',
       site: './Project-Images/computer.svg',
