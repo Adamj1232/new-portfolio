@@ -50,6 +50,7 @@ const SkillsList = [
     skills: [
       'HTML5,',
       'CSS3,',
+      'SASS,',
       'Ag-Grid,',
       'Adobe Photoshop,',
       'Adobe Illustrator,',
