@@ -5,7 +5,26 @@ import './Projects.css';
 const Projects = ({ toggleModal }) => {
   const allProjects = ProjectsData.map((project, i) => {
     const { title, image, gitHubRepo, siteURL, icons } = project;
-    if (!siteURL) {
+    if (!siteURL && !gitHubRepo) {
+      return (
+        <article className="each-project" key={i}>
+          <img
+            className="project-image"
+            src={require(`${image}`)}
+            alt={`Screenshot of my ${title} project`}
+          />
+          <div className="article-layer">
+            <h3>{title}</h3>
+            <button
+              className="project-button"
+              onClick={() => toggleModal(title)}
+            >
+              More Details
+            </button>
+          </div>
+        </article>
+      );
+    } else if (!siteURL) {
       return (
         <article className="each-project" key={i}>
           <img

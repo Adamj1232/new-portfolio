@@ -1,6 +1,19 @@
 // all gif links must be in the format below to work properly but are restrunred from redordit as - http://recordit.co/LAdssCIM1f
 const ProjectsData = [
   {
+    title: 'Symphony',
+    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, D3, Material Design, Express Gateway and a plethora of libraries. Created to visualize and troubleshoot a nation-wide network of a vast array of devices from many vendors, an internal ticketing and alert system as well as a portal to allow network engineers to run commands and scripts on customized groups of devices across the country.',
+    image: './Project-Images/Symphony.png',
+    gifLink:'http://g.recordit.co/9pK6yliaco.gif',
+    gitHubRepo: '',
+    siteURL: '',
+    techUsed: ['Angular 2/4/5 ', 'Javascript ', 'Typescript ', 'RxJS ', 'Material Design ', 'GoJS ', 'D3 ', 'RethinkDB ', 'AgGrid ', 'HTML5 ', 'SASS '],
+    icons: {
+      git: './Project-Images/github.svg',
+      site: './Project-Images/computer.svg',
+    },
+  },
+  {
     title: 'Eco-Symphony',
     description: 'This project was part of an Innovation Day challenge at Charter that I took on with a small team. We used a RaspberryPi 2, as well as a hygrometer, small water pump and led light to create an automated office plant care system. Unfortunately I was not able to get a picture of the system we demo-ed as we had to disassemble for parts for a different small project.',
     image: './Project-Images/EcoSymphony.png',
