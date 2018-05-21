@@ -15,6 +15,7 @@ const Projects = ({ toggleModal }) => {
           />
           <div className="article-layer">
             <h3>{title}</h3>
+            <h5>Enterprise Software - Codebase and URL Unavailable</h5>
             <button
               className="project-button"
               onClick={() => toggleModal(title)}
