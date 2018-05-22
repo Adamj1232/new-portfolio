@@ -29,7 +29,7 @@ const Footer = ({ scrollToTop }) => {
         <a
           className='footer-icon resume'
           download="ACarpenter-Resume-2018.pdf"
-          href={require("../../styles/images/resume-edu.pdf")}
+          href={require("../../styles/images/ACarpenter_2018_Software_Developer_Resume.pdf")}
           title='Download Resume'>
         </a>
         <a
