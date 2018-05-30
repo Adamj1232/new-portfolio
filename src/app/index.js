@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import { getMovies } from './actions/index'
-import { BrowserRouter as Router, browserHistory, Route } from 'react-router-dom';
+import { Router, browserHistory, Route } from 'react-router-dom';
 
 import app from './components/app.js'
 

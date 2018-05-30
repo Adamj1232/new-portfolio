@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^1.1.0",
-    "react": "^15.6.1",
+    "react": "^15.6.2",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
@@ -13,7 +13,7 @@
     "react-particles-js": "^1.5.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.7",
-    "react-scroll": "^1.5.4"
+    "react-scroll": "^1.7.9"
   },
   "scripts": {
     "predeploy": "npm run build",
