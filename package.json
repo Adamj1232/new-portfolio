@@ -30,7 +30,7 @@
     "url": "https://github.com/Adamj1232/new-portfolio"
   },
   "author": "Adam Carpenter",
-  "homepage": "https://adamj1232.github.io/new-portfolio/",
+  "homepage": "https://www.adamjcarpenter.com",
   "pre-commit": [
     "lint"
   ]
