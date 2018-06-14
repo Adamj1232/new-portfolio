@@ -56,7 +56,7 @@ canvas {
 		color: #2c6934;
 	}
 	60% {
-		color: #161975;
+		color: #85aaac;
 	}
 	80% {
 		transform: translate(0) scale(2);
@@ -64,7 +64,7 @@ canvas {
 	}
 	100% {
 		transform: translate(0) scale(1);
-		opacity: .3;
+		opacity: .6;
 	}
 }
 
@@ -83,7 +83,7 @@ canvas {
 	}
 	100% {
 		transform: translate(0) scale(1);
-		opacity: .3;
+		opacity: .6;
 	}
 }
 
@@ -187,7 +187,7 @@ canvas {
         transform: scale(0, 0);
     }
     to {
-        opacity: .3;
+        opacity: .4;
         transform: scale(1, 1);
     }
 }
@@ -198,7 +198,7 @@ canvas {
         transform: scale(0, 0);
     }
     to {
-        opacity: .3;
+        opacity: .4;
         transform: scale(1, 1);
     }
 }
@@ -232,9 +232,9 @@ canvas {
   transition: 3s all linear;
   text-transform: uppercase;
   -webkit-animation-name: name; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 18s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
   animation-name: name;
-  animation-duration: 18s;
+  animation-duration: 10s;
 }
 
 @keyframes name {
@@ -247,8 +247,17 @@ canvas {
       7px 7px #793718, 8px 8px #793718,
       9px 9px #4e654f, 10px 10px #4e654f;
   }
-  100% {
+  50% {
     color: #121312;
+    text-shadow:
+      1px 1px #161975,
+      2px 2px #2c6934,
+      3px 3px #804b33,
+      4px 4px #793718,
+      5px 5px #4e654f;
+  }
+  100% {
+    color: #c1c3c1;
     text-shadow:
       1px 1px #161975,
       2px 2px #2c6934,
