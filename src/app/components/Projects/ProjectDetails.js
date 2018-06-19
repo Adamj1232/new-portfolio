@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProjectDetails.css';
-import ecoGif from './Project-Images/EcoSymphSample.gif';
 
 const ProjectDetails = ({ title, description, image, techUsed, toggleModal, gifLink }) => {
 
