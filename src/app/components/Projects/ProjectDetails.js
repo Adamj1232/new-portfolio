@@ -12,9 +12,6 @@ const ProjectDetails = ({ title, description, image, techUsed, toggleModal, gifL
 
   gifLink === '' ? imageUsed = require(`${image}`) : imageUsed = `${gifLink}`
   
-  if (title === 'Eco-Symphony') {
-    imageUsed = ecoGif;
-  }
     return (
       <section className='project-details'>
         <h2 className='project-detail-header'>{ title }</h2>

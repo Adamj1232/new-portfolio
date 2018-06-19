@@ -110,9 +110,9 @@ const Projects = ({ toggleModal }) => {
     <section id="projects">
       <h2>Projects</h2>
       <div className="projects-wrapper">{allProjects}</div>
+      <MainView/>
     </section>
   );
 };
 
 export default Projects;
-// {/* <MainView/> */}
