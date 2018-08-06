@@ -1,6 +1,6 @@
 import React from 'react'
 import './Resume.css'
-import ResumeImg from '../../styles/images/ACarpenter_2018_Software_Developer_Resume.pdf'
+import ResumeImg from '../../styles/images/ACarpenter_Aug2018_Software_Developer_Resume.pdf'
 
 const Resume = ({ toggleModal }) => {
   return(
