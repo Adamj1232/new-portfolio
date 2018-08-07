@@ -27,6 +27,19 @@ const ProjectsData = [
     },
   },
   {
+    title: 'Config History',
+    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, Material Design, Express Gateway and a plethora of libraries. Created to give Advanced Engineering Opperations Dept an internal ticketing system for outages and troublshooting.',
+    image: './Project-Images/config-history.png',
+    gifLink:'https://dl.dropboxusercontent.com/s/5luwynxqmc9jfp0/ooc-cleaned.gif?dl=0',
+    gitHubRepo: '',
+    siteURL: '',
+    techUsed: ['Angular 2/4/5 ', 'Javascript ', 'Typescript ', 'D3.js', 'RxJS ', 'Material Design ', 'RethinkDB ', 'AgGrid ', 'HTML5 ', 'SASS '],
+    icons: {
+      git: './Project-Images/github.svg',
+      site: './Project-Images/computer.svg',
+    },
+  },
+  {
     title: 'Eco-Symphony',
     description: 'This project was part of an Innovation Day challenge at Charter that I took on with a small team. We used a RaspberryPi 2, as well as a hygrometer, small water pump and led light to create an automated office plant care system. Unfortunately I was not able to get a picture of the system we demo-ed as we had to disassemble for parts for a different small project.',
     image: './Project-Images/EcoSymphony.png',
