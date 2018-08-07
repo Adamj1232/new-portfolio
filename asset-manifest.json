@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.0f0290d1.css",
   "main.css.map": "static/css/main.0f0290d1.css.map",
-  "main.js": "static/js/main.b89da291.js",
-  "main.js.map": "static/js/main.b89da291.js.map",
+  "main.js": "static/js/main.336b4f90.js",
+  "main.js.map": "static/js/main.336b4f90.js.map",
   "static/media/ACarpenter_Aug2018_Software_Developer_Resume.pdf": "static/media/ACarpenter_Aug2018_Software_Developer_Resume.585efc29.pdf",
   "static/media/CloudKicker1.png": "static/media/CloudKicker1.2fcb5890.png",
   "static/media/ConnectFour1.png": "static/media/ConnectFour1.3b075fbc.png",
@@ -18,6 +18,7 @@
   "static/media/arrow.png": "static/media/arrow.7ac08108.png",
   "static/media/code.svg": "static/media/code.a5dc6a2d.svg",
   "static/media/computer.svg": "static/media/computer.c524b7c6.svg",
+  "static/media/config-history.png": "static/media/config-history.5bc85b4d.png",
   "static/media/design.svg": "static/media/design.53c95c64.svg",
   "static/media/email-closed.svg": "static/media/email-closed.7ee66998.svg",
   "static/media/email-open.svg": "static/media/email-open.95bb7f91.svg",
