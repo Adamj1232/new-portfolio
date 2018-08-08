@@ -28,9 +28,9 @@ const ProjectsData = [
   },
   {
     title: 'Config History',
-    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, Material Design, Express Gateway and a plethora of libraries. Created to give Advanced Engineering Opperations Dept an internal ticketing system for outages and troublshooting.',
+    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, Material Design, Express Gateway, etc. Created to give Charter Opperations Dept an internal system for seeing changes and configurations pushed to network devices as well as diff them.',
     image: './Project-Images/config-history.png',
-    gifLink:'https://dl.dropboxusercontent.com/s/5luwynxqmc9jfp0/ooc-cleaned.gif?dl=0',
+    gifLink:'https://dl.dropboxusercontent.com/s/9m5ywmy53d4vrjz/config-history.gif?dl=0',
     gitHubRepo: '',
     siteURL: '',
     techUsed: ['Angular 2/4/5 ', 'Javascript ', 'Typescript ', 'D3.js', 'RxJS ', 'Material Design ', 'RethinkDB ', 'AgGrid ', 'HTML5 ', 'SASS '],
