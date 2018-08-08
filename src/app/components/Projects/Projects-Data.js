@@ -2,7 +2,7 @@
 const ProjectsData = [
   {
     title: 'Symphony',
-    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, D3, Material Design, Express Gateway and a plethora of libraries. Created to visualize and troubleshoot a nation-wide network of a vast array of devices from many vendors, an internal ticketing and alert system as well as a portal to allow network engineers to run commands and scripts on customized groups of devices across the country.',
+    description: 'Enterprise software built with Angular 2/4/5 leveraging Typescript, RxJS, AgGrid, D3, Material Design, Express Gateway and a plethora of libraries. Created to visualize and troubleshoot a nation-wide network of a vast array of devices from many vendors, an internal ticketing and alert system as well as a portal to allow network engineers to run commands and scripts on customized groups of devices across the country.',
     image: './Project-Images/Symphony.png',
     gifLink:'https://dl.dropboxusercontent.com/s/ym7z3vnq092ig5d/symphony-cleaned.gif?dl=0',
     gitHubRepo: '',
@@ -15,7 +15,7 @@ const ProjectsData = [
   },
   {
     title: 'OOC - Opperations Outage Comunique',
-    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, Material Design, Express Gateway and a plethora of libraries. Created to give Advanced Engineering Opperations Dept an internal ticketing system for outages and troublshooting.',
+    description: 'Enterprise software built with Angular 2/4/5 leveraging Typescript, RxJS, AgGrid, Material Design, Express Gateway and a plethora of libraries. Created to give Advanced Engineering Opperations Dept an internal ticketing system for outages and troublshooting.',
     image: './Project-Images/ooc.png',
     gifLink:'https://dl.dropboxusercontent.com/s/5luwynxqmc9jfp0/ooc-cleaned.gif?dl=0',
     gitHubRepo: '',
@@ -28,8 +28,8 @@ const ProjectsData = [
   },
   {
     title: 'Config History',
-    description: 'Enterprise software built with Angular2/4/5 leveraging Typescript, RxJS, AgGrid, Material Design, Express Gateway, etc. Created to give Charter Opperations Dept an internal system for seeing changes and configurations pushed to network devices as well as diff them.',
-    image: './Project-Images/config-history.png',
+    description: 'Enterprise software built with Angular 2/4/5 leveraging Typescript, RxJS, D3.js, AgGrid, Material Design, Express Gateway, etc. Created to give Charter Opperations Dept an internal system for seeing changes and configurations pushed to network devices as well as diff them.',
+    image: './Project-Images/config-hist.png',
     gifLink:'https://dl.dropboxusercontent.com/s/9m5ywmy53d4vrjz/config-history.gif?dl=0',
     gitHubRepo: '',
     siteURL: '',
