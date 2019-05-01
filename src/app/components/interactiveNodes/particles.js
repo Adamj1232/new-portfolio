@@ -39,7 +39,7 @@ const ParticleNodes = () => {
             }
           },
           "opacity": {
-            "value": 0.25,
+            "value": 0.45,
             "random": false,
             "anim": {
               "enable": false,
@@ -62,7 +62,7 @@ const ParticleNodes = () => {
             "enable": true,
             "distance": 40.2388442605866,
             "color": "#53210D",
-            "opacity": 0.5,
+            "opacity": 0.7,
             "width": 1
           },
           "move": {
@@ -112,7 +112,7 @@ const ParticleNodes = () => {
               "duration": 0.4
             },
             "push": {
-              "particles_nb": 10
+              "particles_nb": 40
             },
             "remove": {
               "particles_nb": 0
