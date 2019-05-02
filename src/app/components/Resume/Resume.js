@@ -11,9 +11,8 @@ const Resume = ({ toggleModal }) => {
       <iframe
         src={ ResumeImg }
         title="Adam Carpenter Current Resume"
-        align="top"
         height="620" width="100%"
-        frameborder="0"
+        frameBorder="0"
         scrolling="auto" target="Message">
       </iframe>
       <button

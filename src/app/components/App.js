@@ -21,6 +21,7 @@ class App extends Component {
       modalOpen: false,
       projectToDisplay: ''
     };
+    Modal.setAppElement('body');
     this.toggleModal = this.toggleModal.bind(this);
     this.scrollToTop = this.scrollToTop.bind(this);
   }

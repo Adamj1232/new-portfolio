@@ -20,7 +20,7 @@ const About = ({ toggleModal }) => {
         </p>
         <br/>
         <br/>
-        <p className='about2'>
+        <div className='about2'>
           My strong communication and critical thinking skills make me an enthusiastic and valuable team member.  My background in philosophy and work as a musician has made me very adept at  problem solving and collaboration.  Previous experience includes racking, stacking and cabling within data centers as well as installing, troubleshooting and training on desktop/laptop computers, network devices and security systems.
           <br/>
           <br/>
@@ -28,19 +28,19 @@ const About = ({ toggleModal }) => {
           <br/>
           <br/>
           Read more about me via my
-          <a href='https://www.linkedin.com/in/adam-joseph-carpenter/' target='_blank' rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/adam-joseph-carpenter/" target='_blank' rel="noopener noreferrer">
             &nbsp;LinkedIn,&nbsp;
           </a>
           through my
-          <a
+          <p
           onClick={() => toggleModal('resume')}
           className='resumeDisplay'> resume
-          </a>
+          </p>
           or contact me directly by email
-          <a href='mailto:adamcarpenter86@gmail.com'>
+          <a href="mailto:adamcarpenter86@gmail.com">
             &nbsp;here
           </a>.
-        </p>
+        </div>
         </div>
       </article>
       <div>
