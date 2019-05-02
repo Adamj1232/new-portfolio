@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.code-icon, .testing-icon, .workflow-icon, .design-icon {
+.code-icon, .be-icon, .testing-icon, .workflow-icon, .design-icon {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #14212b;
@@ -17,6 +17,10 @@
 
 .code-icon {
   mask-image: url('../../styles/images/code.svg');
+}
+
+.be-icon {
+  mask-image: url('../../styles/images/back-end.svg');
 }
 
 .testing-icon {

@@ -26,8 +26,8 @@ const SkillsList = [
       'RethinkDB, ',
       'Knex'
     ],
-    imageClass: 'code-icon',
-    imageAlt: 'web browser with code symbols',
+    imageClass: 'be-icon',
+    imageAlt: 'web browser with back end code symbols',
   },
   {
     title: 'Testing',
