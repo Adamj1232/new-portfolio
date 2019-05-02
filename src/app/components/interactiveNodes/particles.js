@@ -17,7 +17,7 @@ const ParticleNodes = () => {
             "value": 200,
             "density": {
               "enable": true,
-              "value_area": 800
+              "value_area": 960
             }
           },
           "color": {
@@ -49,7 +49,7 @@ const ParticleNodes = () => {
             }
           },
           "size": {
-            "value": 2,
+            "value": 1.5,
             "random": true,
             "anim": {
               "enable": false,
@@ -62,7 +62,7 @@ const ParticleNodes = () => {
             "enable": true,
             "distance": 40.2388442605866,
             "color": "#53210D",
-            "opacity": 0.7,
+            "opacity": 0.8,
             "width": 1
           },
           "move": {

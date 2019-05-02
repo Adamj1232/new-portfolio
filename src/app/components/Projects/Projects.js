@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectsData from './Projects-Data.js';
 import './Projects.css';
-import MainView from './Image-Carousel/image-carousel.js';
+
 
 
 const Projects = ({ toggleModal }) => {
