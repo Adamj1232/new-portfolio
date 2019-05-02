@@ -19,8 +19,10 @@ class App extends Component {
     super(props);
     this.state = {
       modalOpen: false,
-      projectToDisplay: ''
+      projectToDisplay: '',
+      imageIsReady: false
     };
+    // Doesnt allow aria to read background when modal is open
     Modal.setAppElement('body');
     this.toggleModal = this.toggleModal.bind(this);
     this.scrollToTop = this.scrollToTop.bind(this);
@@ -86,36 +88,53 @@ class App extends Component {
      }
   }
 
-  render() {
-    return (
-      <div className="App"
-           onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
-        <ParticleNodes/>
-        <img src={require('../styles/images/new-background-trees1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
+  componentDidMount() {
+    const img = new Image();
+    img.src = require('../styles/images/new-background-trees1.png'); // by setting an src, you trigger browser download
 
-        { this.projectDetails() }
-        <section id='header'>
-          <section id='name'>
-            <h1> adam<span id='period'>.</span>carpenter </h1>
-            <h2 id='title' className='employment-field'>
-              <span>S</span><span>o</span><span>f</span><span>t</span>
-              <span>w</span><span>a</span><span>r</span><span>e</span> &nbsp;
-              <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span>
-              <span>p</span><span>e</span><span>r</span>
-            </h2>
+    img.onload = () => {
+      // when it finishes loading, update the component state
+      this.setState({
+        imageIsReady: true
+      });
+    }
+  }
+
+  render() {
+    const { imageIsReady } = this.state;
+    if (!imageIsReady) {
+      return <div className='default-background'></div>; // or just return null if you want nothing to be rendered.
+    } else {
+      return (
+        <div className="App"
+            onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
+          <ParticleNodes/>
+          <img src={require('../styles/images/new-background-trees1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
+
+          { this.projectDetails() }
+          <section id='header'>
+            <section id='name'>
+              <h1> adam<span id='period'>.</span>carpenter </h1>
+              <h2 id='title' className='employment-field'>
+                <span>S</span><span>o</span><span>f</span><span>t</span>
+                <span>w</span><span>a</span><span>r</span><span>e</span> &nbsp;
+                <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span>
+                <span>p</span><span>e</span><span>r</span>
+              </h2>
+            </section>
+            <button
+              id='scroll-btn'
+              type='button'
+              title='Learn More About Adam'
+              onClick={ () => this.scrollToAbout() }>
+            </button>
           </section>
-          <button
-            id='scroll-btn'
-            type='button'
-            title='Learn More About Adam'
-            onClick={ () => this.scrollToAbout() }>
-          </button>
-        </section>
-        <About toggleModal={ this.toggleModal } />
-        <Projects toggleModal={ this.toggleModal } />
-        <Footer scrollToTop={ this.scrollToTop } />
-      </div>
-    );
+          <About toggleModal={ this.toggleModal } />
+          <Projects toggleModal={ this.toggleModal } />
+          <Footer scrollToTop={ this.scrollToTop } />
+        </div>
+      );
+    }
   }
 }
 
