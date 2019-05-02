@@ -25,7 +25,7 @@ const Resume = ({ toggleModal }) => {
         Please click
       <a
         className='resume-download'
-        href="../../styles/images/ACarpenter_Aug2018_Software_Developer_Resume.pdf" download="ACarpenter-Resume-2017"
+        href="../../styles/images/ACarpenter_May2019_Software_Developer_Resume.pdf" download="ACarpenter-Resume-2019"
         title='Download Resume'>
         &nbsp;here
       </a>
