@@ -20,10 +20,13 @@ const SkillsList = [
     skills: [
       'Node.js, ',
       'Java, ',
+      'RabbitMQ, ',
       'JOOQ, ',
       'Express, ',
+      'MySQL, ',
       'PostgreSQL, ',
       'RethinkDB, ',
+      'Liquibase, ',
       'Knex'
     ],
     imageClass: 'be-icon',
@@ -32,6 +35,8 @@ const SkillsList = [
   {
     title: 'Testing',
     skills: [
+      'JUnit, ',
+      'Mockito, ',
       'Jasmine, ',
       'Mocha, ',
       'Chai, ',
