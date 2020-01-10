@@ -1,6 +1,6 @@
 import React from 'react'
 import './Resume.css'
-import ResumeImg from '../../styles/images/ACarpenter_May2019_Software_Developer_Resume.pdf'
+import ResumeImg from '../../styles/images/Adam_Carpenter_Software_Developer_Resume.pdf'
 
 const Resume = ({ toggleModal }) => {
   return(
@@ -24,7 +24,8 @@ const Resume = ({ toggleModal }) => {
         Please click
       <a
         className='resume-download'
-        href="../../styles/images/ACarpenter_May2019_Software_Developer_Resume.pdf" download="ACarpenter-Resume-2019"
+        href = {ResumeImg}
+        download = 'Adam_Carpenter_Software_Developer_Resume'
         title='Download Resume'>
         &nbsp;here
       </a>

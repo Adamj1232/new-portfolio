@@ -1,144 +1,144 @@
 #footer .footer-icon {
-  transition: all 250ms;
-  margin: 35px 10px 0 10px;
-  width: 70px;
-  height: 60px;
+    transition: all 250ms;
+    margin: 35px 10px 0 10px;
+    width: 70px;
+    height: 60px;
 }
 
 #footer .footer-tag {
-  font-size: 1em;
-  margin: 0 10px 10px auto;
+    font-size: 1em;
+    margin: 0 10px 10px auto;
 }
 
 #scroll-top-btn {
-  display: inline-block;
-  transform: rotate(180deg);
-  background-color: transparent;
-  background: url('../../styles/images/arrow.png');
-  background-size: cover;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  margin: 0 10px 10px;
-  width: 50px;
-  height: 50px;
+    display: inline-block;
+    transform: rotate(180deg);
+    background-color: transparent;
+    background: url('../../styles/images/arrow.png');
+    background-size: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px 10px;
+    width: 50px;
+    height: 50px;
 }
 
 #scroll-top-btn:hover {
-  outline: none;
-  filter: drop-shadow(0px 0px 8px #b15629);
-  -webkit-filter: drop-shadow(0px 0px 8px #b15629);
+    outline: none;
+    filter: drop-shadow(0px 0px 8px #b15629);
+    -webkit-filter: drop-shadow(0px 0px 8px #b15629);
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #000000;
-  margin-top: 0;
-  width: 100vh;
-  height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    margin-top: 0;
+    width: 100vh;
+    height: 350px;
 }
 
 .github {
-  background-color: black;
-  -webkit-mask:  url(../../styles/images/github.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/github.svg) no-repeat 8px 8px / 50px;
+    background-color: black;
+    -webkit-mask: url(../../styles/images/github.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/github.svg) no-repeat 8px 8px / 50px;
 }
 
 .github:hover {
-  background-color: #b15629;
-  -webkit-mask:  url(../../styles/images/github-hover.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/github-hover.svg) no-repeat 8px 8px / 50px;
+    background-color: #b15629;
+    -webkit-mask: url(../../styles/images/github-hover.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/github-hover.svg) no-repeat 8px 8px / 50px;
 }
 
 .linkedin {
-  background-color: black;
-  -webkit-mask:  url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
+    background-color: black;
+    -webkit-mask: url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
 }
 
 .linkedin:hover {
-  background-color: #b15629;
-  -webkit-mask:  url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
+    background-color: #b15629;
+    -webkit-mask: url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/linkedin-logo.svg) no-repeat 8px 8px / 50px;
 }
 
 .twitter {
-  background-color: black;
-  -webkit-mask:  url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
+    background-color: black;
+    -webkit-mask: url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
 }
 
 .twitter:hover {
-  background-color: #b15629;
-  -webkit-mask:  url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
+    background-color: #b15629;
+    -webkit-mask: url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/twitter.svg) no-repeat 8px 8px / 50px;
 }
 
 .email {
-  background-color: black;
-  -webkit-mask:  url(../../styles/images/email-closed.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/email-closed.svg) no-repeat 8px 8px / 50px;
+    background-color: black;
+    -webkit-mask: url(../../styles/images/email-closed.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/email-closed.svg) no-repeat 8px 8px / 50px;
 }
 
 .email:hover {
-  background-color: #b15629;
-  -webkit-mask:  url(../../styles/images/email-open.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/email-open.svg) no-repeat 8px 8px / 50px;
+    background-color: #b15629;
+    -webkit-mask: url(../../styles/images/email-open.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/email-open.svg) no-repeat 8px 8px / 50px;
 }
 
 .resume {
-  width: 100px;
-  background-color: black;
-  -webkit-mask:  url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
+    width: 100px;
+    background-color: black;
+    -webkit-mask: url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
 }
 
 .resume:hover {
-  background-color: #b15629;
-  -webkit-mask:  url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
-  mask: url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
+    background-color: #b15629;
+    -webkit-mask: url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
+    mask: url(../../styles/images/resume-download.svg) no-repeat 8px 8px / 50px;
 }
 
 .contact-section {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 400px;
 }
 
 .footer-div {
-  background-color: #56555A;
-  width: 100%;
+    background-color: #56555A;
+    width: 100%;
 }
 
 .top-copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
-  .contact-section {
-    margin-bottom: 25px;
-  }
+    .contact-section {
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 410px) {
-  .contact-section {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 97%;
-  }
+    .contact-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 97%;
+    }
 
-  #scroll-top-btn {
-    display: none;
-  }
+    #scroll-top-btn {
+        display: none;
+    }
 
-  #footer .footer-tag {
-    margin: 0 auto 10px;
-    text-align: center;
-  }
+    #footer .footer-tag {
+        margin: 0 auto 10px;
+        text-align: center;
+    }
 }

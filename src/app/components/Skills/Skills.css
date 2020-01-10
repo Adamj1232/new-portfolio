@@ -1,100 +1,109 @@
 #about h2 {
-  color: #14212b;
-  padding: 30px 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.5em;
-  width: 100%;
+    color: #14212b;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    width: 100%;
 }
 
-.code-icon, .be-icon, .testing-icon, .workflow-icon, .design-icon {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #14212b;
-  width: 120px;
-  height: 124px;
+.code-icon,
+.be-icon,
+.testing-icon,
+.workflow-icon,
+.design-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #14212b;
+    width: 120px;
+    height: 124px;
 }
 
 .code-icon {
-  mask-image: url('../../styles/images/code.svg');
+    mask-image: url('../../styles/images/code.svg');
 }
 
 .be-icon {
-  mask-image: url('../../styles/images/back-end.svg');
+    mask-image: url('../../styles/images/back-end.svg');
 }
 
 .testing-icon {
-  mask-image: url('../../styles/images/testing.svg');
+    mask-image: url('../../styles/images/testing.svg');
 }
 
 .workflow-icon {
-  mask-image: url('../../styles/images/workflow.svg');
-  width: 123px;
+    mask-image: url('../../styles/images/workflow.svg');
+    width: 123px;
 }
 
 .design-icon {
-  mask-image: url('../../styles/images/design.svg');
+    mask-image: url('../../styles/images/design.svg');
 }
 
 .skills-block .inner-skills {
-  padding-left: 25px;
-  width: 55%;
-  color: #14212b;
+    padding-left: 25px;
+    width: 55%;
+    color: #14212b;
 }
 
 .skills-block h4 {
-  padding: 5px 0 15px 0;
-  color: #14212b;
-  font-size: 1.2em;
+    padding: 5px 0 15px 0;
+    color: #14212b;
+    font-size: 1.2em;
 }
 
 .skills-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 10px 35px;
-  padding-bottom: 25px;
-  width: 50%;
-  max-width: 425px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px 35px;
+    padding-bottom: 25px;
+    width: 50%;
+    max-width: 425px;
 }
 
 .skills-wrapper {
-  background-color: #79625a;
-  width: 100vw;
-  pointer-events: none;
+    background-color: #79625a;
+    width: 100vw;
+    pointer-events: none;
 }
 
 .skills-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
 }
+
 .skills-section-outter {
-  display: flex;
-  /*flex-wrap: wrap;*/
-  /*justify-content: center;*/
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 @media (max-width: 690px) {
-  .skills-block {
-    width: 85%;
-  }
+    .skills-block {
+        width: 85%;
+    }
 }
 
 @media (max-width: 420px) {
-  .code-icon, .testing-icon, .workflow-icon, .design-icon {
-    width: 81px;
-    height: 81px;
-  }
 
-  .skills-block:not(:last-child) {
-    border-bottom: solid 1px #1e3426;
-  }
+    .code-icon,
+    .testing-icon,
+    .workflow-icon,
+    .design-icon {
+        width: 81px;
+        height: 81px;
+    }
+
+    .skills-block:not(:last-child) {
+        border-bottom: solid 1px #1e3426;
+    }
 }

@@ -115,5 +115,3 @@ const Projects = ({ toggleModal }) => {
 };
 
 export default Projects;
-
-// {/* <MainView/> */}

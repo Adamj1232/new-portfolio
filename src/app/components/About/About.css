@@ -1,77 +1,80 @@
 #about {
-  text-align: center;
-  background-color: #C4C2C3;
-  color: #1e3426;
-  margin-top: 200px;
-  width: 100vw;
-  z-index: 2;
+    text-align: center;
+    background-color: #C4C2C3;
+    color: #1e3426;
+    margin-top: 200px;
+    width: 100vw;
+    z-index: 2;
 }
 
 .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
 }
 
-.about1, .about2 {
-  margin: 0 0 30px;
-  padding: 0 15px 10px;
-  text-align: left;
-  line-height: 1.3em;
-  width: 47%;
+.about1,
+.about2 {
+    margin: 0 0 30px;
+    padding: 0 15px 10px;
+    text-align: left;
+    line-height: 1.3em;
+    width: 47%;
 }
 
 .about2 a {
-  color: #6c050e;
-  text-decoration: none;
-  font-weight: 700;
+    color: #6c050e;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .resumeDisplay {
-  display: inline;
-  margin-right: 6px;
-  color: #6c050e;
-  font-weight: 700;
+    display: inline;
+    margin-right: 6px;
+    color: #6c050e;
+    font-weight: 700;
 }
 
 .resumeDisplay:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 @media (max-width: 700px) {
-  .about-container{
-    flex-direction: column;
-  }
+    .about-container {
+        flex-direction: column;
+    }
 
-  .about1, .about2 {
-    width: 85%;
-  }
+    .about1,
+    .about2 {
+        width: 85%;
+    }
 
-  .about1 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+    .about1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 380px) {
-  #header {
-    margin-top: 41vh;
-    margin-bottom: 51vh
-  }
+    #header {
+        margin-top: 41vh;
+        margin-bottom: 51vh
+    }
 
-  #about {
-    margin-top: 0px;
-  }
+    #about {
+        margin-top: 0px;
+    }
 
-  .about1, .about2 {
-    text-align: center;
-    font-size: 1.1em;
-    padding: 0;
-  }
+    .about1,
+    .about2 {
+        text-align: center;
+        font-size: 1.1em;
+        padding: 0;
+    }
 
-  .about2 {
-    margin-bottom: 35px;
-  }
+    .about2 {
+        margin-bottom: 35px;
+    }
 }

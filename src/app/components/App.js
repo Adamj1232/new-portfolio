@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-// import { Route, Switch } from 'react-router-dom';
+import React from 'react';
 import Scroll from 'react-scroll';
 import Modal from 'react-modal'
 import ParticleNodes from './interactiveNodes/particles.js';
@@ -11,10 +10,9 @@ import ProjectDetails from './Projects/ProjectDetails.js';
 import Resume from './Resume/Resume.js';
 import About from './About/About.js'
 import Footer from './Footer/Footer.js'
+// import './App.css';
 
-
-
-class App extends Component {
+class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
