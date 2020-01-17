@@ -343,18 +343,20 @@ canvas {
   height: 100vh;
   margin: 0 200px auto auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .App .landing-container {
-  width: 110%;
+  width: 115vw;
   position: absolute;
-  bottom: -28px;
+  bottom: -60px;
   z-index: 0;
   overflow: hidden;
 }
 .App .landing-container .landing-trees {
   width: 112vw;
   overflow: hidden;
+  height: 110%;
 }
 
 .link-container {
