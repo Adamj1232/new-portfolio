@@ -345,12 +345,16 @@ canvas {
   position: relative;
 }
 
-.App .landing-trees {
-  pointer-events: none;
-  width: 100%;
+.App .landing-container {
+  width: 110%;
   position: absolute;
-  bottom: 0;
+  bottom: -28px;
   z-index: 0;
+  overflow: hidden;
+}
+.App .landing-container .landing-trees {
+  width: 112vw;
+  overflow: hidden;
 }
 
 .link-container {

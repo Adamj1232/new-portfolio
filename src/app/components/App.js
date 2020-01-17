@@ -1,4 +1,5 @@
 import React from 'react';
+import Parallax from 'parallax-js';
 import Scroll from 'react-scroll';
 import Modal from 'react-modal'
 import ParticleNodes from './interactiveNodes/particles.js';
@@ -10,7 +11,6 @@ import ProjectDetails from './Projects/ProjectDetails.js';
 import Resume from './Resume/Resume.js';
 import About from './About/About.js'
 import Footer from './Footer/Footer.js'
-// import './App.css';
 
 class App extends React.Component {
   constructor(props){
@@ -18,7 +18,7 @@ class App extends React.Component {
     this.state = {
       modalOpen: false,
       projectToDisplay: '',
-      imageIsReady: false
+      imagesReady: 0
     };
     // Doesnt allow aria to read background when modal is open
     Modal.setAppElement('body');
@@ -88,26 +88,54 @@ class App extends React.Component {
 
   componentDidMount() {
     const img = new Image();
-    img.src = require('../styles/images/new-background-trees1.png'); // by setting an src, you trigger browser download
+    const img2 = new Image();
+    const img3 = new Image();
+    img.src = require('../styles/images/new-background-trees1-1.png'); // by setting an src, you trigger browser download
+    img2.src = require('../styles/images/new-background-trees1-00.png'); // by setting an src, you trigger browser download
+    img3.src = require('../styles/images/new-background-trees1-05.png'); // by setting an src, you trigger browser download
 
+    this.checkForImageload(img)
+    this.checkForImageload(img2)
+    this.checkForImageload(img3)
+  }
+
+  checkForImageload(img) {
     img.onload = () => {
       // when it finishes loading, update the component state
       this.setState({
-        imageIsReady: true
+        imagesReady: this.state.imagesReady + 1
       });
     }
   }
 
+  componentDidUpdate() {
+    new Parallax(this.refs.parallaxContainer)
+  }
+  
+
   render() {
-    const { imageIsReady } = this.state;
-    if (!imageIsReady) {
-      return <div className='default-background'></div>; // or just return null if you want nothing to be rendered.
+    const { imagesReady } = this.state;
+    if (!imagesReady) {
+      return null
     } else {
       return (
         <div className="App"
             onMouseDown={ (e) => this.preventTextSelectionOnDblClick(e) }>
           <ParticleNodes/>
-          <img src={require('../styles/images/new-background-trees1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
+          < div className="landing-container" ref='parallaxContainer'  data-friction-x="0.1"
+			      data-friction-y="0.1"
+            data-scalar-x="15"
+            data-scalar-y="7">
+              < div data-depth={0.2} className = "landing-container-parallax" >
+                <img  src={require('../styles/images/new-background-trees1-1.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
+              </div>
+              < div data-depth={0.08} className = "landing-container-parallax" >
+                <img  src={require('../styles/images/new-background-trees1-00.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
+              </div>
+              < div data-depth={0.05} className = "landing-container-parallax" >
+                <img  src={require('../styles/images/new-background-trees1-05.png')} alt='black sillouette of pine trees as foreground' className='landing-trees'/>
+              </div>
+          </div>
 
           { this.projectDetails() }
           <section id='header'>
@@ -130,6 +158,7 @@ class App extends React.Component {
           <About toggleModal={ this.toggleModal } />
           <Projects toggleModal={ this.toggleModal } />
           <Footer scrollToTop={ this.scrollToTop } />
+            
         </div>
       );
     }
