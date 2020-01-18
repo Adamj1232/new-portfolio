@@ -349,7 +349,7 @@ canvas {
 .App .landing-container {
   width: 115vw;
   position: absolute;
-  bottom: -60px;
+  bottom: -20px;
   z-index: 0;
   overflow: hidden;
 }
@@ -357,6 +357,7 @@ canvas {
   width: 112vw;
   overflow: hidden;
   height: 110%;
+  bottom: 0px;
 }
 
 .link-container {
