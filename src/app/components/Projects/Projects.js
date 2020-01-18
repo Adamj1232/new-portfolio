@@ -1,4 +1,5 @@
 import React from 'react';
+import Coverflow from 'react-coverflow'
 import ProjectsData from './Projects-Data.js';
 import './Projects.css';
 

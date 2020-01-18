@@ -86,7 +86,7 @@ class App extends React.Component {
      }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     const img = new Image();
     const img2 = new Image();
     const img3 = new Image();
@@ -164,6 +164,5 @@ class App extends React.Component {
     }
   }
 }
-
 
 export default App;
