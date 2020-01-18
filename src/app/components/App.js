@@ -86,7 +86,7 @@ class App extends React.Component {
      }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const img = new Image();
     const img2 = new Image();
     const img3 = new Image();
