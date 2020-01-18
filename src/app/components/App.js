@@ -23,19 +23,6 @@ class App extends React.Component {
     // Doesnt allow aria to read background when modal is open
     Modal.setAppElement('body');
     this.toggleModal = this.toggleModal.bind(this);
-    this.scrollToTop = this.scrollToTop.bind(this);
-  }
-
-  scrollToAbout() {
-    Scroll.scroller.scrollTo('about', {
-      durcation: 1000,
-      delay: 250,
-      smooth: true,
-    });
-  }
-
-  scrollToTop() {
-    Scroll.animateScroll.scrollToTop();
   }
 
   projectDetails() {
@@ -148,16 +135,10 @@ class App extends React.Component {
                 <span>p</span><span>e</span><span>r</span>
               </h2>
             </section>
-            <button
-              id='scroll-btn'
-              type='button'
-              title='Learn More About Adam'
-              onClick={ () => this.scrollToAbout() }>
-            </button>
           </section>
           <About toggleModal={ this.toggleModal } />
           <Projects toggleModal={ this.toggleModal } />
-          <Footer scrollToTop={ this.scrollToTop } />
+          <Footer />
             
         </div>
       );

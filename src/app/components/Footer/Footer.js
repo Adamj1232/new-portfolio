@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css'
 
-const Footer = ({ scrollToTop }) => {
+const Footer = () => {
   return (
     <div id='footer' className='footer-div'>
       <section className='contact-section'>
@@ -41,12 +41,7 @@ const Footer = ({ scrollToTop }) => {
         </a>
       </section>
       <section className='top-copyright'>
-        <button
-          id='scroll-top-btn'
-          type='button'
-          onClick={ () => scrollToTop() }>
-        </button>
-        <h4 className='footer-tag'>{'\u00A9'} Adam Carpenter | 2017 </h4>
+        <h4 className='footer-tag'>{'\u00A9'} Adam Carpenter | 2020 </h4>
       </section>
     </div>
   );
