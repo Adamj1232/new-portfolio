@@ -1,6 +1,5 @@
 import React from 'react';
 import Parallax from 'parallax-js';
-import Scroll from 'react-scroll';
 import Modal from 'react-modal'
 import ParticleNodes from './interactiveNodes/particles.js';
 
